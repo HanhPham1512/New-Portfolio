@@ -12,7 +12,7 @@ export default function CV() {
         </h1>
         <div className="mt-8">
           <Link
-            href="f"  // Replace with the URL to your CV
+            href="/static/images/HannahPham_Resume.pdf"  // Replace with the URL to your CV
             className="px-6 py-3 text-white bg-blue-600 rounded-md hover:bg-blue-700"
           >
             Download CV!
