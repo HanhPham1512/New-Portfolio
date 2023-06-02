@@ -1,16 +1,16 @@
 ---
-name: Tails Azimuth
+name: Hannah Pham 
 avatar: /static/images/avatar.png
-occupation: Professor of Atmospheric Science
-company: Stanford University
-email: address@yoursite.com
+occupation: DA/BA Analyst
+company: BENIT Pty Ltd
+email: phamvohieuhanh@gmail.com
 twitter: https://twitter.com/Twitter
-linkedin: https://www.linkedin.com
-github: https://github.com
+linkedin: Linkedin.com/in/hannahpham1512
+github: https://github.com/HanhPham1512
 ---
 
-Tails Azimuth is a professor of atmospheric sciences at the Stanford AI Lab. His research interests includes complexity modelling of tailwinds, headwinds and crosswinds.
+My name is Hannah Pham, and I am a skilled and results-driven data analyst with a strong background in marketing. I have acquired my data analyst skills through various platforms such as Udacity, DataCamp, 365 Data, Codecademy, and LinkedIn Learning. I bring an open-minded and can-do attitude to support businesses with high productivity.
 
-He leads the clean energy group which develops 3D air pollution-climate models, writes differential equation solvers, and manufactures titanium plated air ballons. In his free time he bakes raspberry pi.
+Throughout my career, I have been involved in numerous projects and gained valuable experience working with different companies. My projects have consistently been highly regarded, leading to a 30-35% increase in decision-making efficiency. Additionally, I possess a strong marketing background from my previous role as a Marketing Specialist in Vietnam.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+I am dedicated, driven, and have a proven track record of delivering results. I am confident in my ability to make a positive impact on your organization's success. I am excited about the possibility of contributing my skills and experience to your team and look forward to discussing how I can add value in further detail.
