@@ -1,5 +1,5 @@
 const siteMetadata = {
-  title: 'Hannah's Portfolio',
+  title: 'Hannah Portfolio',
   author: 'Hannah Pham',
   headerTitle: 'Hannah Pham',
   description: 'A simple portfolio created with love and hard working',
