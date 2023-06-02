@@ -17,6 +17,13 @@ const siteMetadata = {
   youtube: 'https://youtube.com',
   linkedin: 'Linkedin.com/in/hannahpham1512',
   locale: 'en-US',
+  
+  // Additional fields for CV
+  cvTitle: 'Hannah CV', // Title of your CV
+  cvDescription: 'Brief description of my CV', // Description of your CV
+  cvUrl: '/static/inages/HannahPham_Resume.pdf', // URL to your CV file
+  // ...
+  
   analytics: {
     // If you want to use an analytics provider you have to add it to the
     // content security policy in the `next.config.js` file.
