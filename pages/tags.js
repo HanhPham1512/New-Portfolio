@@ -1,22 +1,42 @@
 import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
+import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
+import { getAllTags } from '@/lib/tags'
+import kebabCase from '@/lib/utils/kebabCase'
 
-export default function CV() {
+export async function getStaticProps() {
+  const tags = await getAllTags('blog')
+
+  return { props: { tags } }
+}
+
+export default function Tags({ tags }) {
+  const sortedTags = Object.keys(tags).sort((a, b) => tags[b] - tags[a])
   return (
     <>
-      <PageSEO title={`CV - ${siteMetadata.author}`} description="My Curriculum Vitae" />
-      <div className="flex flex-col items-center justify-center mt-24">
-        <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10">
-          My CV
-        </h1>
-        <div className="mt-8">
-          <Link
-            href="/static/images/HannahPham_Resume.pdf"  // Replace with the URL to your CV
-            className="px-6 py-3 text-white bg-blue-600 rounded-md hover:bg-blue-700"
-          >
-            Download CV!
-          </Link>
+      <PageSEO title={`Tags - ${siteMetadata.author}`} description="Things I blog about" />
+      <div className="flex flex-col items-start justify-start divide-y divide-gray-200 dark:divide-gray-700 md:mt-24 md:flex-row md:items-center md:justify-center md:space-x-6 md:divide-y-0">
+        <div className="space-x-2 pt-6 pb-8 md:space-y-5">
+          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:border-r-2 md:px-6 md:text-6xl md:leading-14">
+            Tags
+          </h1>
+        </div>
+        <div className="flex max-w-lg flex-wrap">
+          {Object.keys(tags).length === 0 && 'No tags found.'}
+          {sortedTags.map((t) => {
+            return (
+              <div key={t} className="mt-2 mb-2 mr-5">
+                <Tag text={t} />
+                <Link
+                  href={`/tags/${kebabCase(t)}`}
+                  className="-ml-2 text-sm font-semibold uppercase text-gray-600 dark:text-gray-300"
+                >
+                  {` (${tags[t]})`}
+                </Link>
+              </div>
+            )
+          })}
         </div>
       </div>
     </>
