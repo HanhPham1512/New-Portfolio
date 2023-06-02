@@ -6,7 +6,7 @@ export default function CV() {
   return (
     <>
       <PageSEO title={`CV - ${siteMetadata.author}`} description="My Curriculum Vitae" />
-      <div className="mt-24 flex flex-col items-center justify-center">
+      <div className="mt-24 items-center justify-center flex flex-col">
         <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10">
           My Curriculum Vitae
         </h1>
