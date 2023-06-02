@@ -1,6 +1,6 @@
 ---
 name: Hannah Pham 
-avatar:/static/images/avt.png
+avatar: /static/images/avt.png
 occupation: DA/BA Analyst
 company: BENIT Pty Ltd
 email: phamvohieuhanh@gmail.com
