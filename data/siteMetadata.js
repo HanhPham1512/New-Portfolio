@@ -21,7 +21,7 @@ const siteMetadata = {
   // Additional fields for CV
   cvTitle: 'Hannah CV', // Title of your CV
   cvDescription: 'Brief description of my CV', // Description of your CV
-  cvUrl: '/static/inages/HannahPham_Resume.pdf', // URL to your CV file
+  cvUrl: '/static/images/HannahPham_Resume.pdf', // URL to your CV file
   // ...
   
   analytics: {
