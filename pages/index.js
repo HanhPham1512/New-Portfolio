@@ -5,7 +5,6 @@ import siteMetadata from '@/data/siteMetadata'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 
-
 export default function Home({ posts }) {
   return (
     <>
@@ -19,7 +18,7 @@ export default function Home({ posts }) {
             {siteMetadata.description}
           </p>
         </div>
-   
+      </div>
     </>
-  )
+  );
 }
