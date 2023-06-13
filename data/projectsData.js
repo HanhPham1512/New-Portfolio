@@ -1,7 +1,7 @@
 const projectsData = [
   {
     title: 'BENIT',
-    description:'PTE Master is an AI and Machine Learning-powered platform designed to enhance students' PTE (Pearson Test of English) skills. It offers a seamless practice experience, enabling students to practice and improve their proficiency in PTE.',
+    description:'PTE Master is an AI and Machine Learning-powered platform designed to enhance students PTE (Pearson Test of English) skills. It offers a seamless practice experience, enabling students to practice and improve their proficiency in PTE.',
     imgSrc: '/static/images/google.png',
     href: 'https://www.masterpte.com.au/platform/#/',
   },
