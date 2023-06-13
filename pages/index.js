@@ -1,18 +1,18 @@
-import Link from '@/components/Link'
-import { PageSEO } from '@/components/SEO'
-import Tag from '@/components/Tag'
-import siteMetadata from '@/data/siteMetadata'
-import { getAllFilesFrontMatter } from '@/lib/mdx'
-import formatDate from '@/lib/utils/formatDate'
+import Link from '@/components/Link';
+import { PageSEO } from '@/components/SEO';
+import Tag from '@/components/Tag';
+import siteMetadata from '@/data/siteMetadata';
+import { getAllFilesFrontMatter } from '@/lib/mdx';
+import formatDate from '@/lib/utils/formatDate';
 
-import NewsletterForm from '@/components/NewsletterForm'
+import NewsletterForm from '@/components/NewsletterForm';
 
-const MAX_DISPLAY = 5
+const MAX_DISPLAY = 5;
 
 export async function getStaticProps() {
-  const posts = await getAllFilesFrontMatter('blog')
+  const posts = await getAllFilesFrontMatter('blog');
 
-  return { props: { posts } }
+  return { props: { posts } };
 }
 
 export default function Home({ posts }) {
@@ -28,23 +28,25 @@ export default function Home({ posts }) {
             {siteMetadata.description}
           </p>
         </div>
-           
-      {posts.length > MAX_DISPLAY && (
-        <div className="flex justify-end text-base font-medium leading-6">
-          <Link
-            href="/blog"
-            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-            aria-label="all posts"
-          >
-            All Posts &rarr;
-          </Link>
+        <div>
+          {posts.length > MAX_DISPLAY && (
+            <div className="flex justify-end text-base font-medium leading-6">
+              <Link
+                href="/blog"
+                className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+                aria-label="all posts"
+              >
+                All Posts &rarr;
+              </Link>
+            </div>
+          )}
+          {siteMetadata.newsletter.provider !== '' && (
+            <div className="flex items-center justify-center pt-4">
+              <NewsletterForm />
+            </div>
+          )}
         </div>
-      )}
-      {siteMetadata.newsletter.provider !== '' && (
-        <div className="flex items-center justify-center pt-4">
-          <NewsletterForm />
-        </div>
-      )}
+      </div>
     </>
-  )
+  );
 }
