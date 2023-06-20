@@ -1,6 +1,5 @@
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import { getFileBySlug } from '@/lib/mdx'
-
 import Image from 'next/image';
 
 const images = [
@@ -15,8 +14,10 @@ const Gallery = () => {
   return (
     <div className="flex flex-wrap">
       {images.map((image, index) => (
-        <div key={index} className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-2">
-          <Image src={image} alt={`Image ${index + 1}`} width={500} height={300} />
+        <div key={index} className="p-2 w-full md:w-1/2 lg:w-1/3 xl:w-1/4">
+          <div className="relative w-full h-0 pb-2/3">
+            <Image src={image} alt={`Image ${index + 1}`} layout="fill" objectFit="cover" />
+          </div>
         </div>
       ))}
     </div>
@@ -24,4 +25,5 @@ const Gallery = () => {
 };
 
 export default Gallery;
+
 
