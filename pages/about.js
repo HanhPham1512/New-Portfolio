@@ -1,6 +1,6 @@
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import { getFileBySlug } from '@/lib/mdx'
-import Image from 'next/image'
+import Image from 'next/image';
 
 const images = [
   '/static/images/h1.png',
@@ -8,19 +8,21 @@ const images = [
   '/static/images/h3.png',
   '/static/images/h4.png',
   // Add more image URLs here
-]
+];
 
 const Gallery = () => {
   return (
-    <div className="flex flex-wrap">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {images.map((image, index) => (
-        <div key={index} className="w-full p-2 md:w-1/2 lg:w-1/3 xl:w-1/4">
-          <div className="pb-2/3·relative·h-0 w-full">
+        <div key={index} className="relative w-full aspect-w-1 aspect-h-1">
+          <div className="bg-white shadow-lg rounded-lg overflow-hidden">
             <Image src={image} alt={`Image ${index + 1}`} layout="fill" objectFit="cover" />
           </div>
         </div>
       ))}
     </div>
-  )
-}
-export default Gallery
+  );
+};
+
+export default Gallery;
+
