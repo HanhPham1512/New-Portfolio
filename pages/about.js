@@ -1,6 +1,6 @@
 import { MDXLayoutRenderer } from '@/components/MDXComponents'
 import { getFileBySlug } from '@/lib/mdx'
-import Image from 'next/image';
+import Image from 'next/image'
 
 const images = [
   '/static/images/h1.png',
@@ -8,7 +8,7 @@ const images = [
   '/static/images/h3.png',
   '/static/images/h4.png',
   // Add more image URLs here
-];
+]
 
 const Gallery = () => {
   return (
@@ -21,9 +21,9 @@ const Gallery = () => {
         </div>
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default Gallery;
+export default Gallery
 
 
