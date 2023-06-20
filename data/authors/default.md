@@ -5,7 +5,7 @@ occupation: DA/BA Analyst
 company: BENIT Pty Ltd
 email: phamvohieuhanh@gmail.com
 twitter: https://twitter.com/Twitter
-linkedin: Linkedin.com/in/hannahpham1512
+linkedin: https://Linkedin.com/in/hannahpham1512
 github: https://github.com/HanhPham1512
 ---
 Hello, I'm Hannah Pham, a Data Analyst with a strong background in Marketing Analysis. I thrive on the opportunity to transform data into valuable insights that make a positive impact on your team and business.
