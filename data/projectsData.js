@@ -1,4 +1,18 @@
 const projectsData = [
+
+  {
+    title: 'BENIT',
+    description:'PTE Master is an AI and Machine Learning-powered platform designed to enhance students PTE (Pearson Test of English) skills. It offers a seamless practice experience, enabling students to practice and improve their proficiency in PTE.',
+    imgSrc: '/static/images/PTE-master.png',
+    href: 'https://www.masterpte.com.au/platform/#/',
+  },
+  {
+    title: 'Mentem',
+    description: `Mentem specializes in building learning cultures within organizations, empowering them to constantly upskill and reskill their workforce. Through our Learning Platform, we enable organizations to prepare their employees for the present and future challenges by providing a comprehensive solution for continuous learning and development.`,
+    imgSrc: '/static/images/MT.png',
+    href: 'https://www.mentem.co/about/whatwedo/',
+  },
+
   {
     title: 'BENIT',
     description:'PTE Master is an AI and Machine Learning-powered platform designed to enhance students PTE (Pearson Test of English) skills. It offers a seamless practice experience, enabling students to practice and improve their proficiency in PTE.',
