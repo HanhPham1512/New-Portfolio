@@ -1,6 +1,8 @@
-import { MDXLayoutRenderer } from '@/components/MDXComponents'
-import { getFileBySlug } from '@/lib/mdx'
-
+import { MDXLayoutRenderer } from '@/components/MDXComponents';
+import { getFileBySlug } from '@/lib/mdx';
+import Image from 'next/image';
+import PageSEO from '@/components/PageSEO';
+import { siteMetadata } from '@/data/siteMetadata';
 
 export default function Gallery() {
   return (
@@ -24,5 +26,6 @@ export default function Gallery() {
         </div>
       </div>
     </>
-  )
+  );
 }
+``
