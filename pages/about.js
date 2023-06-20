@@ -1,7 +1,7 @@
-import siteMetadata from '@/data/siteMetadata';
-import projectsData from '@/data/gallery';
-import Card from '@/components/Card';
-import { PageSEO } from '@/components/SEO';
+import siteMetadata from '@/data/siteMetadata'
+import projectsData from '@/data/gallery'
+import Card from '@/components/Card'
+import { PageSEO } from '@/components/SEO'
 
 export default function Projects() {
   return (
@@ -13,7 +13,7 @@ export default function Projects() {
             My Gallery
           </h1>
           <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            Gallery
+          hwoooooooooo
           </p>
         </div>
         <div className="container py-12">
@@ -31,5 +31,5 @@ export default function Projects() {
         </div>
       </div>
     </>
-  );
+  )
 }
