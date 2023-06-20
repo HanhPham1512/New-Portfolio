@@ -1,27 +1,32 @@
-import { MDXLayoutRenderer } from '@/components/MDXComponents'
-import { getFileBySlug } from '@/lib/mdx'
-import Image from 'next/image'
-import PageSEO from '@/components/PageSEO'
-import { siteMetadata } from '@/data/siteMetadata'
+import siteMetadata from '@/data/siteMetadata'
+import projectsData from '@/data/projectsData'
+import Card from '@/components/Card'
+import { PageSEO } from '@/components/SEO'
 
-export default function Gallery() {
+export default function Projects() {
   return (
     <>
-      <PageSEO title={`Gallery - ${siteMetadata.author}`} description="My Project Gallery" />
-      <div className="mt-24 flex flex-col items-center justify-center">
-        <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10">
-          My Project Gallery
-        </h1>
-
-        <div className="flex flex-wrap">
-          <div className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-2">
-            <Image src="/static/images/h1.png" alt="Image 1" layout="responsive" width={500} height={300} />
-          </div>
-          <div className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-2">
-            <Image src="/static/images/h2.png" alt="Image 2" layout="responsive" width={500} height={300} />
-          </div>
-          <div className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-2">
-            <Image src="/static/images/h3.png" alt="Image 3" layout="responsive" width={500} height={300} />
+      <PageSEO title={`Projects - ${siteMetadata.author}`} description={siteMetadata.description} />
+      <div className="divide-y divide-gray-200 dark:divide-gray-700">
+        <div className="space-y-2 pt-6 pb-8 md:space-y-5">
+          <h1 className="text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+            Gallery
+          </h1>
+          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+        
+          </p>
+        </div>
+        <div className="container py-12">
+          <div className="-m-4 flex flex-wrap">
+            {projectsData.map((d) => (
+              <Card
+                key={d.title}
+                title={d.title}
+                description={d.description}
+                imgSrc={d.imgSrc}
+                href={d.href}
+              />
+            ))}
           </div>
         </div>
       </div>
