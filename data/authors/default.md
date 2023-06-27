@@ -10,7 +10,7 @@ github: https://github.com/HanhPham1512
 ---
 Hello, I'm Hannah Pham, a Data Analyst with a strong background in Marketing Analysis. I thrive on the opportunity to transform data into valuable insights that make a positive impact on your team and business.
 
-🔗 Portfolio Link: https://portfolio-hanhpham1512.vercel.app/
+🔗 Portfolio Link: https://hannahpham-portfolio.vercel.app/
 
 🔗 GitHub: https://github.com/HanhPham1512
 
